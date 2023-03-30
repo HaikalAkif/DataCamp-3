@@ -21,7 +21,7 @@ As before, code is included that imports the cars data as a Pandas DataFrame.
 
 Instructions
 -Use loc or iloc to select the observation corresponding to Japan as a Series.
-The label of this row is JAP, the index is 2. Make sure to print the resulting Series.
+The label of this row is JPN, the index is 2. Make sure to print the resulting Series.
 -Use loc or iloc to select the observations for Australia and Egypt as a DataFrame.
 You can find out about the labels/indexes of these rows by inspecting cars in the
 IPython Shell. Make sure to print the resulting DataFrame.
@@ -31,7 +31,7 @@ import pandas as pd
 cars = pd.read_csv('cars.csv', index_col = 0)
 
 # Print out observation for Japan
-print(cars.loc['JAP'])
+print(cars.loc['JPN'])
 
 # Print out observations for Australia and Egypt
 print(cars.loc[['AUS', 'EG']])
